@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 돌리기 */
+        /* h1 {
+            text-align: center;
+            font-size: 53px;
+        }
+        .tr1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid black;
+
+            transition-property: width, height;
+            transition-duration: 2s, 1s;
+
+            transition-property: background-color, transform, width, height;
+            transition-duration: 2s, 3s;
+        }
+
+        .tr1:hover {
+            color: white;
+            width: 200px;
+            height: 120px;
+            background-color: black;
+            transform: rotate(180deg);
+        } */
+        /* 상자 돌리면서 이동 */
+        /* #ex {
+            position: relative;
+            width: 500px;
+            height: 150px;
+            margin: 0 auto;
+            border: 1px solid green;
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        .box {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            background-color: black;
+            font-size: 12px;
+        }
+
+        .box p {
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        #no-delay {
+            transition-duration: 3s;
+        }
+
+        #delay {
+            transition-duration: 3s;
+            transition-delay: 1s;
+        }
+
+        #ex:hover .box {
+            transform: rotate(720deg);
+            margin-left: 420px;
+        } */
+
+        .div1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: change-bg;
+            animation-duration: 3s;
+            float: left;
+            z-index: 2;
+            
+        }
+        
+        .div2 {
+            /* position: relative; */
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: rotate;
+            animation-duration: 3s;
+            z-index: 1;
+        }
+
+
+        @keyframes change-bg {
+            from {
+                background-color: blue;
+                border: 1px solid black;
+            }
+            50% {
+                background-color: yellow;
+            }            
+            to {
+                background-color: grey;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                background-color: white;
+                border: 1px solid black;
+            }
+            50% {
+                background-color: green;
+            }
+            to {
+                background-color: black;
+                transform: rotate(45deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="tr1"></div> -->
+    <!-- <div class="tr1"><h1>!</h1></div> -->
+
+    <!-- 상자 돌리면서 이동 -->
+    <!-- <div id="ex">
+        <div id="no-delay" class="box"><p>no-delay</p></div>
+        <div id="delay" class="box"><p>delay</p></div>
+    </div> -->
+
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+</html>

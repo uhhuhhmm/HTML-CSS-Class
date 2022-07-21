@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        /* 상대 선택자 */
+        /* input:enabled {
+            background-color: blue;
+        } */
+
+        /* input:disabled {
+            background-color: gray;
+        } */
+
+        /* input:focus {
+            background-color: orange;
+        } */
+
+        /* a:link : 방문 전 링크 상태이다
+        a:visited : 방문 후 링크 상태이다
+        a:hover : 마우스 오버 했을 때 링크 상태이다
+        a:active : 클릭 했을 때 링크 상태이다 */
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: orange;
+        }
+        a:hover {
+            color: green;
+            text-decoration: underline;
+        }
+        a:active {
+            color: black;
+        }
+        /* 부정 선택자 */
+        input:not([type=password]){
+            background-color: red;
+        }
+    </style>
+<body>
+    <!-- <h2>Enabled</h2>
+    <input />
+    <h2>Disabled</h2>
+    <input disabled="disabled" /> -->
+
+    <a href="http://www.naver.com">네이버 링크 테스트</a><br>
+    <a href="http://www.daum.net">다음 링크 테스트</a><br>
+    
+    <input type="password">
+    <input type="text">
+    <input type="password">
+    <input type="text">
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            height: 50px;
+            padding: 20px;
+        }
+
+        .va1 {
+            vertical-align: top;
+        }
+        
+        .va2 {
+            vertical-align: middle;
+        }
+        
+        .va3 {
+            vertical-align: bottom;
+        }
+
+        body {
+            font-family: 맑은고딕;
+        }
+
+        .table1 {
+            border: 1px solid black;
+            width: 400px;
+            /* border-collapse: collapse; */
+        }
+
+        .table1 td {
+            border: 1px dotted black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #tb1 { 
+            empty-cells: hide;
+        }
+        
+        p {
+            width: 300px;
+            height: 300px;
+            background-color: beige;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        .table3 {
+            border-collapse: collapse;
+            width: 300px;
+            table-layout: fixed;
+            word-break: break-all;
+        }
+
+        .table3 td {
+            width: 150px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>vertical-alignment</caption>
+        <tr>
+            <td class="va1">alignment</td>
+            <td class="va2">alignment</td>
+            <td class="va3">alignment</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="table1">
+        <caption>프로축구 경기 일정</caption>
+        <tr>
+            <td>울산</td>
+            <td>울산 vs 인천</td>
+        </tr>
+        <tr>
+            <td>부산</td>
+            <td>부산 vs 대전</td>
+        </tr>
+        <tr>
+            <td>서울</td>
+            <td id="tb1">서울 vs 강원</td>
+        </tr>
+    </table>
+    <hr>
+    <p>
+        가운데
+    </p>
+    <hr>
+    <h1>Table Layout</h1>
+    <table border="1" class="table3">
+        <tr>
+            <td>
+                한글로띄어쓰기없기길게붙여쓰기
+                한글로띄어쓰기없기길게붙여쓰기
+            </td>
+            <td>
+                long_desciption_without_space
+                long_desciption_without_space
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

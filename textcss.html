@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a {
+            text-decoration: none;
+        }
+
+        .edited {
+            text-decoration: line-through;
+            text-transform : uppercase
+        } */
+        /* text-shadow: 가로거리, 세로거리, 번짐, 색상; */
+        /* .shadow1 {
+            color: orange;
+            text-shadow: 1px 1px;
+        }
+
+        .shadow2 { 
+            text-shadow: 5px 5px 3px #f00;
+        }
+
+        .shadow3 {
+            color: #fff;
+            text-shadow: 7px -7px 5px #000;
+        } */
+
+        /* body {
+            background-color: #222;
+        }
+
+        h1 {
+            font-size: 80px;
+            font-family: "Arial Rounded MT";
+            letter-spacing: 4px;
+        }
+        .shadow4 {
+            color: #000;
+            text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -19px 18px #f20;
+        } */
+        /* 문자 간격주기 */
+        /* .letter {
+            letter-spacing: 0.2em;
+        } */
+        /* 문자 간격주기 */
+        /* .word {
+            word-spacing: 3em;
+        } */
+        /* 정 렬 */
+        /* p {
+            border : 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .align-justify {
+            text-align: justify;
+        } */
+
+        /* p {
+            font-family: Consolas;
+            font-size: 16px;
+        } */
+
+        /* .t {
+            font-weight: bold;
+        } */
+        
+        /* .a {
+            white-space: normal;
+        } */
+        /* 공백 X, 줄 X */
+        /* .b {
+            white-space: nowrap;
+        } */
+        /* 공백 O, 줄 X */
+        /* .c {
+            white-space: pre;
+        } */
+        /* 공백 O, 줄 O */
+        /* .d {
+            white-space: pre-wrap;
+        } */
+        /* 공백 X, 줄 O */
+        /* .e {
+            white-space: pre-line;
+        } */
+        /* 줄과 줄 사이 간격 */
+        /* p {
+            line-height: 30px;
+        } */
+
+        .a {
+            border: 3px solid #ccc;
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .a:hover{
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <p class="t">white-space: normal;</p>
+    <p class="a">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+    <p class="t">white-space: nowrap;</p>
+    <p class="b">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+    <p class="t">white-space: pre;</p>
+    <p class="c">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+    <p class="t">white-space: pre-wrap;</p>
+    <p class="d">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+    <p class="t">white-space: pre-line;</p>
+    <p class="e">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+
+
+    <!-- <p class="align-left">
+        Integer elementum massa at nulla placerat varius.
+        Suspendisse in libero risus, in interdum massa.
+        Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+        Nullam est eros, suscipit sed dictum quis, accumsan a ligula.
+    </p>
+    <p class="align-right">
+        Integer elementum massa at nulla placerat varius.
+        Suspendisse in libero risus, in interdum massa.
+        Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+        Nullam est eros, suscipit sed dictum quis, accumsan a ligula.
+    </p>
+    <p class="align-center">
+        Integer elementum massa at nulla placerat varius.
+        Suspendisse in libero risus, in interdum massa.
+        Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+        Nullam est eros, suscipit sed dictum quis, accumsan a ligula.
+    </p>
+    <p class="align-justify">
+        Integer elementum massa at nulla placerat varius.
+        Suspendisse in libero risus, in interdum massa.
+        Vestibulum ac leo vitae metus faucibus gravida ac in neque.
+        Nullam est eros, suscipit sed dictum quis, accumsan a ligula.
+    </p> -->
+
+    <!-- <h2>토마토(Tomato)</h2>
+    <p>[<a href="http://www.fitbug.com/Superfoods-tomatoes" target="_blank">외부 링크</a>]</p> -->
+    
+    <!-- <h1 class="letter">HTML5</h1> -->
+
+    <!-- <p class="word">토마토는 비타민A, C가 풍부한 <span class="edited">과일이다.</span>채소다. 
+    칼륨과 같은 각종 미네랄은 혈액의 산성도를 낮추는 역할을 해주며 혈압을 내리고 혈관을 튼튼하게 해준다. 토마토에 들어있는 피코펜이라는 성분은 뛰어난 항암 작용을 보이며 잘 알려져 있듯이 블루베리와 함께 대표적인 항산화 음식이기도 하다.</p> -->
+        <!-- <h1 class="shadow4">HTML5</h1> -->
+        
+        <!-- <h1>HTML5</h1>
+        <h1 class="shadow1">HTML5</h1>
+        <h1 class="shadow2">HTML5</h1>
+        <h1 class="shadow3">HTML5</h1> -->
+        
+    </body>
+</html>

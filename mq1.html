@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            background: black;
+        }
+        nav ul{
+            height: 50px;
+            margin: 0;
+            list-style: none;
+            color: white;
+            background-color: black;
+            
+        }
+
+        nav ul li {
+            float: left;
+            margin: 5px 15px;
+            padding: 10px;  
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        #container, nav {
+            width: 310px;
+            margin-bottom: 20px;
+        }
+
+        #intro {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #intro img {
+            max-width: 100%;
+            display: inline;
+        }
+
+        #desc {
+            width: 100%;
+            padding: 10px;
+            display: inline-block;
+            
+        }
+        
+        footer {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            background-color: #37001c;
+            color: white;
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            #container, nav {
+                width: 750px;
+                margin: 0 auto;
+            }
+
+            #intro {
+                width: 100%;
+                /* overflow: hidden; */
+            }
+
+            #intro img {
+                float: left;
+                width: 200px;
+                margin: 20px;
+            }
+
+            #desc {
+                clear: both;
+                width: 100%;
+                padding: 0;
+                margin-right: 10px auto;
+            }
+
+            footer {
+                height: 150px;
+                background: url(img/mq2.jpg) no-repeat center;
+                background-size: cover;
+            }
+
+            footer p {
+                line-height: 110px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            #container, nav {
+                width: 1000px;
+                margin: 0 auto;
+            }
+
+            #intro img {
+                float: left;
+            }
+            
+            #desc {
+                display: inline-block;
+                width: 250px;
+                height: 150px;
+                padding: 5px;
+                border: 1px solid black
+            }
+
+            footer {
+                clear: both;
+                height: 200px;
+            }
+
+            footer p {
+                line-height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container">
+        <section id="intro">
+            <img src="img/mq1.jpg" alt="">
+            <img src="img/mq5.jpg" alt="">
+            <img src="img/mq4.jpg" alt="">
+        </section>
+        <section id="desc" class="text">
+            <p>Form Follows Function은 2012년에 만든 HTML5의 기술을 저의 아트웍과 결합해서 재미있는 인터랙션으로 보여주는 웹사이트입니다.</p>
+        </section>
+        <footer>
+            <p>개인작업이지만 이 작업으로 구글, 애플, 넷플릭스 같은 기업에서 잡오퍼를 받았다.</p>
+        </footer>
+    </div>
+</body>
+</html>

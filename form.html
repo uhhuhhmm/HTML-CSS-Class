@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- type = text, password, checkbox, radio, hidden, email, 
+        number, color, date, file, submit, reset, button-->
+    <form method="" action="http://www.google.com">
+        <fieldset style="width: 580px;">
+            <legend>로그인 정보</legend>
+            <label for="id">ID : </label>
+            <input type="text" name="id" id="id" value="" autofocus placeholder="ID"><br>
+
+            <label for="pw">PWD : </label>
+            <input type="password" name="pw" id="pw" required size="70" minlength="4" maxlength="8"><br>
+        </fieldset>
+
+        <fieldset style="width: 200px;">
+            <legend align="center">개인 정보</legend>
+            <input type="checkbox" name="hobby" checked>영화감상
+            <input type="checkbox" name="hobby">게임
+            <input type="checkbox" name="hobby">도박
+            <br>
+
+            <input type="radio" name="subject">HTML
+            <input type="radio" name="subject">JAVA
+            <input type="radio" name="subject" checked>SQL
+        </fieldset>
+        <br>
+        
+        <input type="hidden" name="page" value="10">
+        <label for="mail">이메일 : </label>
+        <input type="email" name="mail" id="mail">
+        <br>
+
+        <label for="num">주문수량 : </label>
+        <input type="number" min="10" max="100" value="10" step="10">
+        <br>
+
+        <label for="">선호색상 : </label>
+        <input type="color" value="#00ff00">
+
+        <br>
+        <input type="date">
+        <br>
+
+        <label for="">직 업 </label>
+        <select name="job" multiple size="5">
+            <option>==선택하세요==</option>
+            <option>군인</option>
+            <option selected>교사</option>
+            <option>언론인</option>
+            <option>기타</option>
+        </select>
+        <br>
+        파일 업로드 : <input type="file"><br>
+        <textarea name="content" cols="60" rows="5"></textarea>
+        <br>
+        <input type="submit" value="회원가입">
+        <input type="reset" value="취소">
+        <button onclick="alert('Hello');">경고창 실행</button>
+        <input type="button" onclick="alert('Hello');" value="알림메시지">
+    </form>
+
+    <hr>
+
+    <form method="" action="http://www.google.com">
+        <fieldset style="width: 550px;">
+            <h1>프런트엔드 개발자 지원서</h1>
+            <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+            <hr>
+
+            <h2>개인정보</h2>
+            <ul>
+                <label for="id">이름 </label>
+                <input type="text" name="id" id="id" placeholder="공백없이 입력하세요"><br>
+                <label for="ph">연락처 </label>
+                <input type="number" minlength="11" maxlength="11" placeholder="000-0000-0000">
+            </ul>
+
+            <h2>지원 분야</h2>
+            <ul>
+                <input type="radio" name="job"> 웹 퍼블리싱<br>
+                <input type="radio" name="job"> 웹 애플리케이션 개발<br>
+                <input type="radio" name="job"> 개발 환경 개선
+            </ul>
+
+            <h2>지원 동기</h2>
+            <label>
+                <textarea name="text" id="" cols="70" rows="5" placeholder="본사 지원 동기를 간략히 써주세요"></textarea><br>
+            </label>
+            <input type="submit" value="접수하기">
+            <input type="reset" value="다시 쓰기">
+        </fieldset>
+
+    </form>
+</body>
+</html>
